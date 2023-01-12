@@ -18,3 +18,22 @@ python.exe -m pip install --upgrade pip
 ```
 pip3 install locust
 ```
+
+# Run load tests
+
+## Headful / UI mode
+1. Start locust
+```
+locust -f <path>/locustfile.py
+```
+
+2. Access http://localhost:8089/ and set:
+- number of users
+- spawn rate
+- base URL
+
+## Headless mode
+
+```
+locust --headless --users 1 --spawn-rate 1 -H <base_url>
+```
