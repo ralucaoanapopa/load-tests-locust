@@ -21,6 +21,13 @@ pip3 install locust
 
 # Run load tests
 
+Locust files from this repository use the following domains:
+
+ locust file | base URL  
+ --- | --- 
+ BookCartAPI | https://bookcart.azurewebsites.net/api 
+ LibraryAPI | https://postman-library-api.glitch.me
+
 ## Headful / UI mode
 1. Start locust
 ```
