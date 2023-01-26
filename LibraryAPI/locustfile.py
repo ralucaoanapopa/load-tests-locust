@@ -71,13 +71,21 @@ class TaskSet(SequentialTaskSet):
 
     @task
     def read_one_book_created(self):
-        self.client.get(url = f"/books/{self.book_id_created_list[0]}", 
+        list_no = len(self.book_id_created_list)
+        self.client.get(url = f"/books/{self.book_id_created_list[list_no-1]}", 
                         headers = HEADERS)
 
     @task
     def update_one_book_created(self):
-        self.client.patch(url = f"/books/{self.book_id_created_list[0]}",
+        list_no = len(self.book_id_created_list)
+        self.client.patch(url = f"/books/{self.book_id_created_list[list_no-1]}",
                         json = UPDATE_BOOK_BODY,
+                        headers = HEADERS)
+
+    @task
+    def delete_one_book_created(self):
+        list_no = len(self.book_id_created_list)
+        self.client.delete(url = f"/books/{self.book_id_created_list[list_no-1]}", 
                         headers = HEADERS)
         
 class AllOperationsUser(HttpUser):
