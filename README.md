@@ -55,3 +55,13 @@ locust --headless --users 1 --spawn-rate 1 -H <base_url>
 This is and example of Response time (ms) diagram. It was generated using locust in UI mode and generating html report.
 
 ![LibraryAPI-response_time](/LibraryAPI/response_times_(ms).png "LibraryAPI-response_time")
+
+## ShopDemoQA
+
+Generated using locust in UI mode, then saved a html report which contains these types of diagrams and statistics:
+
+![ShopDemoQA-request-statistics](/ShopDemoQA/request_statistics.PNG "ShopDemoQA-request-statistics")
+
+![ShopDemoQA-response-times](/ShopDemoQA/response_times_(ms).png "ShopDemoQA-response-times")
+
+![ShopDemoQA-total-req-per-s](/ShopDemoQA/total_requests_per_second.png "ShopDemoQA-total-req-per-s")
