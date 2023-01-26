@@ -27,6 +27,7 @@ Locust files from this repository use the following domains:
  --- | --- 
  BookCartAPI | https://bookcart.azurewebsites.net/api 
  LibraryAPI | https://postman-library-api.glitch.me
+ ShopDemoQA | https://shop.demoqa.com
 
 ## Headful / UI mode
 1. Start locust
@@ -37,10 +38,20 @@ locust -f <path>/locustfile.py
 2. Access http://localhost:8089/ and set:
 - number of users
 - spawn rate
-- base URL
+- base URL*
+
+* only if host is not set in locust file.
 
 ## Headless mode
 
 ```
 locust --headless --users 1 --spawn-rate 1 -H <base_url>
 ```
+
+# Results
+
+## LibraryAPI
+
+This is and example of Response time (ms) diagram. It was generated using locust in UI mode and generating html report.
+
+![LibraryAPI-response_time](/LibraryAPI/response_times_(ms).png "LibraryAPI-response_time")
