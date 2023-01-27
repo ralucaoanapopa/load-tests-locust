@@ -40,7 +40,7 @@ locust -f <path>/locustfile.py
 - spawn rate
 - base URL*
 
-* only if host is not set in locust file.
+*only if host is not set in locust file.
 
 ## Headless mode
 
