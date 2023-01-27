@@ -65,3 +65,15 @@ Generated using locust in UI mode, then saved a html report which contains these
 ![ShopDemoQA-response-times](/ShopDemoQA/response_times_(ms).png "ShopDemoQA-response-times")
 
 ![ShopDemoQA-total-req-per-s](/ShopDemoQA/total_requests_per_second.png "ShopDemoQA-total-req-per-s")
+
+## PublicSOAP-API-Countries
+
+Generated using locust in UI mode, then saved a html report which contains these types of diagrams and statistics:
+
+![PublicSOAP-API-request-statistics](/PublicSOAP-API-Countries/request_statistics.PNG "PublicSOAP-API-request-statistics")
+
+![PublicSOAP-API-response-times](/PublicSOAP-API-Countries/response_times_(ms).png "PublicSOAP-API-response-times")
+
+![PublicSOAP-API-total_requests_per_second](/PublicSOAP-API-Countries/total_requests_per_second.png "PublicSOAP-API-total_requests_per_second")
+
+![PublicSOAP-API-number_of_users](/PublicSOAP-API-Countries/number_of_users.png "PublicSOAP-API-number_of_users")
